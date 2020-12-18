@@ -1,0 +1,111 @@
+.top__navbar
+    background: #F8F3F4
+    padding-top: 60px
+    padding-bottom: 60px
+    font-size: 24px
+    line-height: 29px
+    color: #F16D7F
+    display: flex
+    justify-content: space-between
+    &_breadcrumbs
+        display: flex
+        font-weight: 300
+        font-size: 14px
+        line-height: 17px
+        color: #636363
+    &_breadcrumbs :last-child
+        font-weight: 700
+        color: #F16D7F
+    &_breadcrumbs :not(:last-child)::after
+        padding-left: 8px
+        padding-right: 8px
+        content: "/"
+
+.catalog__filters
+    display: flex
+    padding-top: 48px
+    padding-bottom: 64px
+    position: relative
+
+    .main_filter,
+    .main_filter :last-child
+        padding-left: 16px
+        z-index: 9999
+
+    .main_filter:hover ~ .main_filter-open
+        display: flex
+
+    .main_filter:hover .fab
+        color: $mainAccentColor
+
+    .main_filter-open
+        display: none
+        z-index: 1
+        position: absolute
+        width: 360px
+        top: 32px
+        flex-direction: column
+        padding: 24px
+        padding-top: 56px
+        background: #FFFFFF
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+        .main_filter-items
+            display: flex
+            flex-direction: column
+            font-style: 14px
+            line-height: 17px
+            color: #000
+
+        & :not(:last-child)
+            margin-bottom: 12px
+
+        .filter_category
+            display: flex
+            align-items: center
+            border-bottom: 1px solid #EBEBEB
+            &::before
+                content: ""
+                display: inline-block
+                width: 5px
+                height: 37px
+                margin-right: 8px
+                background: $mainAccentColor
+
+    details
+        position: relative
+
+    details summary::-webkit-details-marker
+        display: none
+
+    summary
+        outline: none
+
+    summary i
+        padding-left: 8px
+
+    .filters_center
+        position: absolute
+        z-index: 1
+        display: flex
+        gap: 48px
+        justify-content: center
+        align-items: baseline
+        margin-left: auto
+        margin-right: auto
+        left: 0
+        right: 0
+
+        &-items
+            position: absolute
+            width: 80px
+            display: flex
+            flex-direction: column
+            padding: 12px
+            background: #FFFFFF
+            box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+
+.pagination
+    display: flex
+    justify-content: center
+    margin-top: 46px
+    margin-bottom: 96px

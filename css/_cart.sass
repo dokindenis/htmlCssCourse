@@ -1,0 +1,148 @@
+.shopping-cart-inner
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    margin-top: 96px
+
+.added-section
+
+.product-card
+    position: relative
+    display: flex
+    filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13))
+    background-color: #ffffff
+    width: 652px
+    &_photo
+        width: 262px
+        height: 306px
+    &:not(:last-child)
+        margin-bottom: 40px
+
+.product-card_description
+    margin-left: 32px
+    margin-top: 24px
+    .card_item_name
+        font-size: 24px
+        line-height: 29px
+        color: #222222
+        max-width: 300px
+        margin-bottom: 42px
+        font-weight: 400
+    .card_item_price,
+    .card_item_color,
+    .card_item_size,
+    .card_item_quantity
+        font-size: 22px
+        line-height: 26px
+        color: #575757
+        margin-bottom: 8px
+
+.card_item_price
+    mark
+        color: $mainAccentColor
+        background-color: #fff
+
+.card_item_quantity
+    input
+        width: 56px
+        height: 24px
+        font-size: 18px
+        line-height: 22px
+        color: #656565
+        border: 1px solid #EAEAEA
+        text-align: center
+
+.fa-times
+    position: absolute
+    top: 28px
+    right: 22px
+    &:hover
+        color: $mainAccentColor
+
+.after-cards-buttons
+    justify-content: space-between
+    display: flex
+    margin-top: 72px
+
+.button--secondary
+    padding: 14px 38px
+    text-decoration: none
+    font-size: 16px
+    line-height: 19px
+    width: fit-content
+    color: #000000
+    border: 1px solid #A4A4A4
+    background-color: #ffffff
+    &:hover
+        background-color: $mainAccentColor
+        color: white
+        border: 1px solid $mainAccentColor
+.destructive
+    &:hover
+        background-color: red
+
+.info-section
+    width: 360px
+    input
+        font-weight: 300
+        font-size: 13px
+        line-height: 16px
+        color: #222222
+        height: 44px
+        padding-left: 16px
+        &:not(:last-child)
+            margin-bottom: 20px
+.address-form
+    margin-bottom: 56px
+.shipping-address-heading
+    font-weight: 300
+    font-size: 16px
+    line-height: 19px
+    color: #222222
+    margin-bottom: 20px
+
+.shipping-address
+    display: flex
+    flex-direction: column
+
+.checkout-block
+    background: #F5F3F3
+    padding: 44px
+    text-align: right
+    .subtotal
+        font-size: 11px
+        line-height: 13px
+        color: #4A4A4A
+        margin-bottom: 12px
+    .total
+        font-weight: 300
+        font-size: 16px
+        line-height: 19px
+        color: #222222
+        &::after
+            content: ''
+            display: block
+            height: 1px
+            width: 275px
+            background: #E2E2E2
+            margin-top: 21px
+            margin-bottom: 16px
+    mark
+        margin-left: 24px
+        background-color: #F5F3F3
+    .accent
+        color: $mainAccentColor
+
+.button--primary
+    padding: 14px 38px
+    text-decoration: none
+    font-size: 16px
+    line-height: 19px
+    width: fit-content
+    color: #ffffff
+    border: 1px solid $mainAccentColor
+    background-color: $mainAccentColor
+    &:hover
+        background-color: $mainAccentColor + #111
+        color: white
+        border: 1px solid $mainAccentColor + #111

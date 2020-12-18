@@ -1,0 +1,123 @@
+.product__photos
+    background: #F7F7F7
+    height: 777px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    .arrow
+        padding: 12px 18px
+        background: rgba(42, 42, 42, 0.15)
+        &:hover i
+            color: #E05C6E
+
+.product__description
+    margin-bottom: 54px
+    top: -75px
+    position: relative
+
+    &_wrapper
+        padding-top: 65px
+        padding-bottom: 65px
+        border: 1px solid #EAEAEA
+        background-color: white
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+
+        .product-collection
+            font-weight: 300
+            font-size: 14px
+            line-height: 17px
+            color: #F16D7F
+            position: relative
+            &::after
+                content: ""
+                position: absolute
+                width: 64px
+                height: 3px
+                background: #EF5B70
+                display: block
+                top: 24px
+                left: 50%
+                transform: translateX(-50%) translateY(-50%)
+
+        .product--name
+            font-weight: 300
+            font-size: 18px
+            line-height: 22px
+            color: #4D4D4D
+            margin: 27px auto 48px
+
+        .product--discription
+            font-weight: 300
+            font-size: 14px
+            line-height: 17px
+            text-align: center
+            color: #5E5E5E
+            width: 55%
+
+        .product--price
+            margin-top: 32px
+            padding-bottom: 80px
+            font-weight: 300
+            font-size: 24px
+            line-height: 29px
+            color: #EF5B70
+            position: relative
+
+            &::after
+                content: ""
+                position: absolute
+                width: 640px
+                height: 1px
+                background: #EF5B70
+                display: block
+                top: 64px
+                left: 50%
+                transform: translateX(-50%) translateY(-50%)
+
+        .filters--product
+            display: flex
+            gap: 48px
+            justify-content: center
+            align-items: baseline
+            details summary::-webkit-details-marker
+                display: none
+            summary
+                outline: none
+                i
+                    padding-left: 8px
+
+            &-items
+                position: absolute
+                width: 80px
+                display: flex
+                flex-direction: column
+                padding: 12px
+                background: #FFFFFF
+                box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+
+        .cart_adding_button
+            display: flex
+            background-color: white
+            color: #F26376 !important
+            border: 1px solid #FF6A6A
+            justify-content: center
+            align-items: center
+            font-size: 16px
+            line-height: 19px
+            margin-top: 64px
+            gap: 24px
+            padding: 12px 40px 12px 24px
+
+            &:hover
+                background-color: #F26376
+                color: white !important
+                fill: white
+
+            &:hover .cart--icon
+                fill: white
+
+.marginOnProductPage
+    margin-top: 120px

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/cef15c47da.js" crossorigin="anonymous"></script>
+    <title>Shopping Cart</title>
+</head>
+
+<body>
+
+    <header class="header center">
+        <nav class="header_left both">
+            <a href="index.html"><img src="img/logo.svg" alt="icon"></a>
+            <a href="#"><img src="img/search.svg" alt="icon"></a>
+        </nav>
+        <nav class="header_right both">
+            <a href="catalog.html"><img src="img/menu.svg" alt="icon"></a>
+            <a href="#"><img src="img/user.svg" alt="icon"></a>
+            <a href="cart.html"><img src="img/cart.svg" alt="icon"></a>
+        </nav>
+    </header>
+
+    <nav class="top__navbar center">SHOPPING CART</nav>
+
+    <section class="shopping-cart-inner center">
+        <div class="added-section">
+            <div class="product-card">
+                <img src="img/product-1.png" alt="product photo" class="product-card_photo">
+                <div class="product-card_description">
+                    <div class="card_item_name">MANGO PEOPLE T-SHIRT</div>
+                    <div class="card_item_price">Price: <mark>$300</mark></div>
+                    <div class="card_item_color">Color: Red</div>
+                    <div class="card_item_size">Size: Xl</div>
+                    <div class="card_item_quantity">Quantity: <input type="number" value="2"></div>
+                </div>
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="product-card">
+                <img src="img/product-2.png" alt="product photo" class="product-card_photo">
+                <div class="product-card_description">
+                    <div class="card_item_name">MANGO PEOPLE T-SHIRT</div>
+                    <div class="card_item_price">Price: <mark>$300</mark></div>
+                    <div class="card_item_color">Color: Red</div>
+                    <div class="card_item_size">Size: Xl</div>
+                    <div class="card_item_quantity">Quantity: <input type="number" value="2"></div>
+                </div>
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="after-cards-buttons">
+                <button class="button--secondary destructive">CLEAR SHOPPING CART</button>
+                <a href="index.html" class="button--secondary">CONTINUE SHOPPING</a>
+            </div>
+        </div>
+        <div class="info-section">
+            <div class="address-form">
+                <h5 class="shipping-address-heading">SHIPPING ADRESS</h5>
+                <form action="submit" class="shipping-address">
+                    <input type="text" placeholder="Bangladesh" required>
+                    <input type="text" placeholder="State" required>
+                    <input type="text" placeholder="Postcode / Zip" required>
+                    <button type="submit" class="button--secondary">GET A QUOTE</button>
+                </form>
+            </div>
+            <div class="checkout-block">
+                <p class="subtotal">SUB TOTAL <mark>$900</mar>
+                </p>
+                <h6 class="total">GRAND TOTAL <mark class="accent">$900</mar>
+                </h6>
+                <button type="submit" class="button--primary">PROCEED TO CHECKOUT</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="subscribe center marginOnProductPage">
+        <div class="sub">
+            <img src="img/sub-avatar.png" alt="avatar">
+            <div class="sub-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“
+            </div>
+        </div>
+        <div class="sub-right sub">
+            <div class="sub-right_text">SUBSCRIBE
+                <span>FOR OUR NEWLETTER AND PROMOTION</spa>
+            </div>
+            <form class="email_form">
+                <input type="email" placeholder="Enter your Email" class="sub-form" required>
+                <input type="submit" value="Subscribe" class="sub-button">
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer center">
+        <p>© 2021 Brand All Rights Reserved.</p>
+        <div class="icons">
+            <a href="#" class="footer__icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="footer__icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="footer__icon"><i class="fab fa-pinterest"></i></a>
+            <a href="#" class="footer__icon"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

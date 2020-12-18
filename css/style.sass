@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap')
+
+@import vars
+
+*
+    margin: 0
+    padding: 0
+    font-family: 'Lato', sans-serif
+    box-sizing: border-box
+
+a, a:visited, a:hover, a:active
+    text-decoration: none
+    color: inherit
+
+.center
+    padding-left: calc(50% - 570px)
+    padding-right: calc(50% - 570px)
+
+.header
+    background-color: #222222
+    display: flex
+    justify-content: space-between
+    height: 75px
+    .both
+        display: flex
+        align-items: center
+        gap: 32px
+
+.hero
+    display: flex
+    padding-left: calc(50% - 800px)
+    padding-right: calc(50% - 800px)
+
+    &_left
+        width: 50%
+
+    .promo_img
+        width: 100%
+        height: 100%
+
+    .hero_right
+        background-color: #F1E4E6
+        width: 50%
+        display: flex
+        align-items: center
+        padding-left: 64px
+
+        &__text
+            text-transform: uppercase
+            display: flex
+            flex-direction: column
+            margin-left: 16px
+
+    .heading
+        font-size: 3rem
+        font-weight: 900
+        line-height: 58px
+
+    .subheading
+        font-size: 2rem
+        font-weight: 700
+
+    .pink
+        color: #F16D7F
+
+    .line
+        background-color: #F16D7F
+        width: 12px
+        height: 92px
+
+.offer
+    padding-bottom: 97px
+    padding-top: 64px
+    &_top
+        display: flex
+        gap: 30px
+    &_bottom
+        width: 100%
+        margin-top: 30px
+    .category
+        position: relative
+        &_text
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            color: white
+            text-align: center
+            font-weight: 400
+            text-transform: uppercase
+        &_text span
+            color: #F16D7F
+            font-weight: 700
+            font-size: 1.5rem
+
+.products
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    .top_text
+        text-align: center
+        & h1
+            color: #222222
+            font-size: 30px
+            line-height: 36px
+            font-weight: 400
+            margin-bottom: 6px
+        & p
+            color: #9F9F9F
+            margin-bottom: 48px
+    .products_section
+        display: flex
+        gap: 30px
+        margin-bottom: 30px
+    .product
+        background-color: #F8F8F8
+        position: relative
+        &:hover .product__img
+            filter: brightness(50%)
+        &:hover .product_name a
+            color: #F16D7F
+        &:hover .cart_adding
+            display: flex
+        &_info
+            padding: 24px 16px 20px
+    .cart_adding
+        display: none
+        position: absolute
+        top: 188px
+        left: 111px
+        color: white !important
+        border: 1px solid white
+        width: 138px
+        height: 44px
+        justify-content: center
+        align-items: center
+    .product_name
+        font-size: 13px
+        line-height: 16px
+        color: #000000
+        margin-bottom: 12px
+        text-decoration: none
+    .product_desc
+        font-size: 14px
+        line-height: 17px
+        color: #5D5D5D
+        margin-bottom: 18px
+    .product_price
+        font-size: 16px
+        line-height: 19px
+        color: #F16D7F
+    .button
+        padding: 14px 38px
+        text-decoration: none
+        font-size: 16px
+        line-height: 19px
+        color: #F26376
+        border: solid 1px #F26376
+        margin-top: 18px
+        margin-bottom: 95px
+        &:hover
+            background-color: #F16D7F
+            color: white
+
+.features
+    background-color: #222224
+    display: flex
+    gap: 30px
+
+.feature
+    display: flex
+    flex-direction: column
+    align-items: center
+    color: #FBFBFB
+    padding: 104px 0
+    .fheading
+        font-size: 19.96px
+        line-height: 24px
+        font-weight: 400
+        margin-bottom: 16px
+        margin-top: 24px
+    .ftext
+        font-weight: 300
+        font-size: 13.972px
+        line-height: 17px
+        text-align: center
+
+.subscribe
+    height: 448px
+    background-image: url(../img/sub-bg.png)
+    background-size: cover
+    display: flex
+    align-items: center
+
+    .sub
+        display: flex
+        flex-direction: column
+        align-items: center
+
+        &-text
+            width: 360px
+            font-size: 20px
+            line-height: 24px
+            font-weight: 400
+            text-align: center
+            color: #222224
+            margin-top: 30px
+
+        &-right
+            align-items: center
+            width: 100%
+
+        &-right_text
+            font-size: 24px
+            line-height: 167.2%
+            text-align: center
+            color: #222224
+            font-weight: 700
+            margin-bottom: 32px
+
+        &-right_text span
+            font-size: 18px
+            line-height: 30.1px
+            text-align: center
+            font-weight: 400
+            display: block
+
+    .email_form
+        display: flex
+        border-radius: 99px
+        width: 356px
+
+        &:hover
+            box-shadow: 0 0 10px rgba(0,0,0,0.2)
+
+    .sub-form
+        border: none
+        font-size: 14px
+        line-height: 17px
+        display: flex
+        align-items: center
+        color: #222224
+        width: 100%
+        border-radius: 99px 0 0 99px
+        padding-left: 22px
+        padding-right: 22px
+        height: 49px
+        outline: none
+
+        &::placeholder
+            opacity: 0.67
+            font-size: 14px
+            line-height: 17px
+
+    .sub-button
+        background: #F16D7F
+        font-weight: 400
+        font-size: 14px
+        line-height: 17px
+        text-align: center
+        color: #FFFFFF
+        height: 36px
+        padding-right: 24px
+        padding-left: 24px
+        border: none
+        border-radius: 0 99px 99px 0
+        height: 49px
+        outline: none
+
+        &:hover
+            background: #E05C6E
+
+.footer
+    display: flex
+    justify-content: space-between
+    background-color: #222224
+    padding-top: 24px
+    padding-bottom: 24px
+
+    & p
+        font-size: 16px
+        line-height: 19px
+        color: #FBFBFB
+
+.icons
+    display: flex
+    gap: 8px
+
+.footer__icon
+    background-color: white
+    width: 32px
+    height: 32px
+    display: flex
+    justify-content: center
+    align-items: center
+
+    &:hover
+        background-color: #F16D7F
+
+    &:hover .fab
+        color: white
+
+/* Catalog styles */
+@import catalog
+
+/* Product styles */
+@import product
+
+/* Cart styles */
+@import cart
