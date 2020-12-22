@@ -1,0 +1,74 @@
+.registration
+    margin-top: 64px
+    display: flex
+    justify-content: space-between
+    &__form
+        width: 360px
+        &-heading
+            font-weight: 300
+            font-size: 16px
+            line-height: 19px
+            color: #222222
+            margin-bottom: 20px
+        input
+            @extend %input
+            &:not(:last-child)
+                margin-bottom: 20px
+        p
+            font-weight: 300
+            font-size: 13px
+            line-height: 16px
+            color: #B1B1B1
+            margin-bottom: 40px
+    &__radios
+        display: flex
+        * + *
+            margin-left: 20px
+    .check-label
+        display: flex
+        align-items: center
+        font-weight: 300
+        font-size: 14px
+        line-height: 16px
+
+    button
+        .fa-arrow-right
+            margin-left: 20px
+            color: white !important
+
+            color: #000000
+    input[type="radio" i]
+        margin-right: 10px
+
+.button
+    @extend %button--secondary
+    background-color: $mainAccentColor
+    color: white
+    &:hover
+        background-color: $mainAccentColor + #111
+        color: white
+
+.registration__offer
+    width: 625px
+    .offer__heading
+        font-weight: 300
+        font-size: 24px
+        line-height: 29px
+        color: #000000
+        margin-bottom: 22px
+    p
+        font-weight: 300
+        font-size: 24px
+        line-height: 29px
+        color: #000000
+    ul
+        list-style-image: url("../img/check.svg")
+        padding-inline-start: 27px
+        margin-top: 24px
+        * + *
+            padding-top: 20px
+        li
+            font-weight: 300
+            font-size: 24px
+            line-height: 29px
+            color: #000000

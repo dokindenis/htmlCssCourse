@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/cef15c47da.js" crossorigin="anonymous"></script>
+    <title>Registration</title>
+</head>
+
+<body>
+
+    <header class="header center">
+        <nav class="header_left both">
+            <a href="index.html"><img src="img/logo.svg" alt="icon"></a>
+            <a href="#"><img src="img/search.svg" alt="icon"></a>
+        </nav>
+        <nav class="header_right both">
+            <a href="catalog.html"><img src="img/menu.svg" alt="icon"></a>
+            <a href="registration.html"><img src="img/user.svg" alt="icon"></a>
+            <a href="cart.html"><img src="img/cart.svg" alt="icon"></a>
+        </nav>
+    </header>
+
+    <nav class="top__navbar center">REGISTRATION</nav>
+
+    <section class="registration center">
+        <div class="registration__form">
+            <h5 class="registration__form-heading">Your Name</h5>
+            <form action="submit" class="shipping-address">
+                <input type="text" placeholder="First Name" required>
+                <input type="text" placeholder="Last Name" required>
+                <div class="registration__radios">
+
+                    <label for="male" class="check-label">
+                        <input id="male" type="radio" name="gender" required>
+                        Male</label>
+
+                    <label for="female" class="check-label">
+                        <input id="female" type="radio" name="gender">
+                        Female</label>
+                </div>
+                <h5 class="registration__form-heading">Login details</h5>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <p>Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase
+                    letters</p>
+                <button type="submit" class="button">JOIN NOW<i class="fas fa-arrow-right"></i></button>
+            </form>
+        </div>
+        <div class="registration__offer">
+            <h5 class="offer__heading">LOYALTY HAS ITS PERKS</h5>
+            <p>Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as
+                soon as you join:</p>
+            <ul>
+                <li class="perk">15% off welcome offer</li>
+                <li class="perk">Free shipping, returns and exchanges on all orders
+                </li>
+                <li class="perk">$10 off a purchase on your birthday</li>
+                <li class="perk">Early access to products</li>
+                <li class="perk">Exclusive offers & rewards</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="subscribe center marginOnProductPage">
+        <div class="sub">
+            <img src="img/sub-avatar.png" alt="avatar">
+            <div class="sub-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“
+            </div>
+        </div>
+        <div class="sub-right sub">
+            <div class="sub-right_text">SUBSCRIBE
+                <span>FOR OUR NEWLETTER AND PROMOTION</spa>
+            </div>
+            <form class="email_form">
+                <input type="email" placeholder="Enter your Email" class="sub-form" required>
+                <input type="submit" value="Subscribe" class="sub-button">
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer center">
+        <p>© 2021 Brand All Rights Reserved.</p>
+        <div class="icons">
+            <a href="#" class="footer__icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="footer__icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="footer__icon"><i class="fab fa-pinterest"></i></a>
+            <a href="#" class="footer__icon"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

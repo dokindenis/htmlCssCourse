@@ -26,7 +26,6 @@
         line-height: 29px
         color: #222222
         max-width: 300px
-        margin-bottom: 42px
         font-weight: 400
     .card_item_price,
     .card_item_color,
@@ -38,6 +37,7 @@
         margin-bottom: 8px
 
 .card_item_price
+    margin-top: 42px
     mark
         color: $mainAccentColor
         background-color: #fff
@@ -84,12 +84,7 @@
 .info-section
     width: 360px
     input
-        font-weight: 300
-        font-size: 13px
-        line-height: 16px
-        color: #222222
-        height: 44px
-        padding-left: 16px
+        @extend %input
         &:not(:last-child)
             margin-bottom: 20px
 .address-form

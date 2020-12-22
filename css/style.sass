@@ -1,16 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap')
-
+@import reset
 @import vars
+@import components
 
-*
-    margin: 0
-    padding: 0
+// *
+//     margin: 0
+//     padding: 0
+//     box-sizing: border-box
+
+body
     font-family: 'Lato', sans-serif
-    box-sizing: border-box
-
-a, a:visited, a:hover, a:active
-    text-decoration: none
-    color: inherit
 
 .center
     padding-left: calc(50% - 570px)
@@ -151,16 +150,13 @@ a, a:visited, a:hover, a:active
         line-height: 19px
         color: #F16D7F
     .button
-        padding: 14px 38px
-        text-decoration: none
-        font-size: 16px
-        line-height: 19px
-        color: #F26376
-        border: solid 1px #F26376
+        @extend %button--secondary
+        background-color: $mainAccentColor
+        color: white
         margin-top: 18px
         margin-bottom: 95px
         &:hover
-            background-color: #F16D7F
+            background-color: $mainAccentColor + #111
             color: white
 
 .features
@@ -301,11 +297,7 @@ a, a:visited, a:hover, a:active
     &:hover .fab
         color: white
 
-/* Catalog styles */
 @import catalog
-
-/* Product styles */
 @import product
-
-/* Cart styles */
 @import cart
+@import registration

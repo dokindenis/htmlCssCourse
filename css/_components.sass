@@ -1,0 +1,32 @@
+%input
+    font-weight: 400
+    font-size: 13px
+    line-height: 16px
+    color: #222222
+    height: 44px
+    padding-left: 16px
+    padding-right: 16px
+    border: 1px solid #A4A4A4
+    &:hover
+        border: 1px solid $ligthenAccentColor
+    &:focus
+        border: 1px solid $mainAccentColor
+        outline: none
+        animation: shadow-drop-br 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+        @keyframes shadow-drop-br
+            0%
+                box-shadow: 0 0 0 0 rgba(0, 0, 0, 0)
+            100%
+                -webkit-box-shadow: 1px 5px 10px 2px rgba(0, 0, 0, 0.05)
+                -moz-box-shadow: 1px 5px 10px 2px rgba(0, 0, 0, 0.05)
+                box-shadow: 1px 5px 10px 2px rgba(0, 0, 0, 0.07)
+
+%button--secondary
+    padding: 14px 38px
+    text-decoration: none
+    font-size: 16px
+    line-height: 19px
+    width: -webkit-fit-content
+    width: -moz-fit-content
+    width: fit-content
+    border: none
